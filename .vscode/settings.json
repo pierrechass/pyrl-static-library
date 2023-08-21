@@ -1,0 +1,28 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+    "python.languageServer": "Pylance",
+    "python.formatting.provider": "none",
+    "python.formatting.blackArgs": [
+        "--line-length=119"
+    ],
+    "editor.rulers": [
+        119
+    ],
+    "isort.args": [
+        "--profile", "black"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=missing-docstring,fixme, unused-argument,invalid-name, line-too-long, too-few-public-methods, unspecified-encoding, protected-access",
+        "--generated-members=cv2.*, torch.*",
+        "--extension-pkg-whitelist=cv2",
+        
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}

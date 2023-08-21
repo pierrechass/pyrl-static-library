@@ -4,9 +4,7 @@ import einops
 import numpy as np
 from scipy.optimize import linprog
 
-from sycabot_cirl.config.discrete_config import Config
-from sycabot_cirl.environments.discrete import Gridworld
-from sycabot_cirl.methods.discrete.entropy_regularized import occ2policy
+from .entropy_regularized import occ2policy
 
 
 class LP:
